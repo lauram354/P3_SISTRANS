@@ -14,22 +14,11 @@ import uniandes.edu.co.proyecto.repositorio.UsuariosRepository;
 import uniandes.edu.co.proyecto.repositorio.tipoHabitacionRepository;
 
 @SpringBootApplication
-public class ProyectoApplication implements CommandLineRunner{
-	@Autowired
-	private tipoHabitacionRepository usuariosRepository;
+public class ProyectoApplication{
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) {
-		// TODO Auto-generated method stub
-		Collection<tipoHabitaciones> usuarios = usuariosRepository.darTipoHabitaciones();
-		for (tipoHabitaciones b:usuarios){
-			System.out.println(b);
-		}
-		
-		
-	}
-
 }
+
