@@ -10,7 +10,7 @@ import jakarta.transaction.Transactional;
 import uniandes.edu.co.proyecto.modelo.Habitaciones;
 import uniandes.edu.co.proyecto.modelo.tipoHabitaciones;
 
-public interface ReservasRepository extends JpaRepository<Habitaciones, Integer>{
+public interface ReservasRepository extends JpaRepository<Reservas, Integer>{
 
     //RF9 hace falta acualizar llegada al hotel
     //Toca colocar que estas operaciones solo recepcionista
@@ -35,16 +35,6 @@ public interface ReservasRepository extends JpaRepository<Habitaciones, Integer>
     @Query(value = "UPDATE Reservas SET check_in = false WHERE idReserva= :idReserva", nativeQuery = true)
     void borar_Check_in_Reserva(@Param("idReserva") Integer idReserva);
 
-    //RF10 
-    //Toca colocar que solo empleado
-    //
-    //
-    @Modifying
-    @Transactional
-    @Query(value = "INSERT INTO cuentaConsumos(pagado, idReserva, fecha) VALUES (:pagado, :(SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, Usuarios_idUsuario, check_in, check_out FROM Reservas WHERE Habitaciones_id= : 
-    Habitaciones_id), :fecha)", nativeQuery = true)
-    void insertarConsumo(@Param("pagado") boolean pagado, @Param("Habitaciones_id") String nombreUsuario, @Param("email") String email, @Param("rol") String rol, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel, @Param("tipoId") String tipoId);
-    
     //RF11 hace falta acualizar salida al hotel 
 
     //Registrar salida del hotel. 
