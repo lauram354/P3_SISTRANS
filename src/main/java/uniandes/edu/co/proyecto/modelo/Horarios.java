@@ -12,7 +12,7 @@ public class Horarios {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)  
-    private String idHorario;
+    private String idServicio;
 
     private String horaInicial;
     private String horaFinal;
@@ -31,12 +31,12 @@ public class Horarios {
 
     //GETTERS y SETTERS
 
-    public String getIdHorario() {
-        return idHorario;
+    public String getIdServicio() {
+        return idServicio;
     }
 
-    public void setIdHorario(String idHorario) {
-        this.idHorario = idHorario;
+    public void setIdServicio(String idServicio) {
+        this.idServicio = idServicio;
     }
 
     public String getHoraInicial() {

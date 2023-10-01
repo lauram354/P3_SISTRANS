@@ -12,13 +12,13 @@ public class Hoteles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String nombre;
-    
+    private String nombreHotel;
+
     private Integer cant_habitaciones;
 
     public Hoteles(String nombre, Integer cant_habitaciones)
     {
-        this.nombre = nombre;
+        this.nombreHotel = nombre;
         this.cant_habitaciones = cant_habitaciones;
     }
 
@@ -27,8 +27,8 @@ public class Hoteles {
 
 
     //GETTERS
-    public String getNombre() {
-        return nombre;
+    public String getNombreHotel() {
+        return nombreHotel;
     }
 
     public Integer getCant_habitaciones() {
@@ -36,8 +36,8 @@ public class Hoteles {
     }
 
     //SETTERS
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setNombreHotel(String nombre) {
+        this.nombreHotel = nombre;
     }
 
     public void setCant_habitaciones(Integer cant_habitaciones) {
