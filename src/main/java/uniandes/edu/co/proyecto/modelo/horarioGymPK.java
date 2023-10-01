@@ -25,6 +25,12 @@ public class horarioGymPK {
         this.idHorario = idHorario;
     }
 
+    
+
+    
+
+    public horarioGymPK() {;
+    }
     //GETTERS
 
     public Gimnasios getIdGimnasio() {

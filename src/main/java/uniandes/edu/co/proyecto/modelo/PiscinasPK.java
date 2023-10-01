@@ -18,6 +18,9 @@ public class PiscinasPK implements Serializable {
         this.idServicio = idServicios;
     }
 
+    public PiscinasPK() {
+    }
+
     public Servicios getIdServicio() {
         return idServicio;
     }

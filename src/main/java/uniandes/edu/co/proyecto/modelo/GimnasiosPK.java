@@ -17,6 +17,9 @@ public class GimnasiosPK implements Serializable {
         super();
         this.idServicio = idServicio;
     }
+    
+    public GimnasiosPK() {;
+    }
 
     public Servicios getIdServicio() {
         return idServicio;

@@ -23,6 +23,10 @@ public class maquinasGymPK implements Serializable{
         this.idMaquina = idMaquina;
     }
 
+
+    public maquinasGymPK() {;
+    }
+
     //GETTERS Y SETTERS
 
     public Gimnasios getIdServicio() {

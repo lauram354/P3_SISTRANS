@@ -23,6 +23,11 @@ public class ReservanPK implements Serializable {
         this.idReserva = idReserva;
     }
 
+    
+
+    public ReservanPK() {;
+    }
+
     //GETTERS
 
     public Usuarios getIdUsuario() {
