@@ -9,12 +9,12 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="cuentaConsumos")
+@Table(name="cuentaConsu")
 public class cuentaConsumos {
     
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    private String idCuenta;
+    private Integer idCuenta;
 
     private Boolean pagado;
 
@@ -34,7 +34,7 @@ public class cuentaConsumos {
 
     //GETTERS
 
-    public String getIdCuenta() {
+    public Integer getIdCuenta() {
         return idCuenta;
     }
 
@@ -48,7 +48,7 @@ public class cuentaConsumos {
 
     //SETTERS
 
-    public void setIdCuenta(String idCuenta) {
+    public void setIdCuenta(Integer idCuenta) {
         this.idCuenta = idCuenta;
     }
 

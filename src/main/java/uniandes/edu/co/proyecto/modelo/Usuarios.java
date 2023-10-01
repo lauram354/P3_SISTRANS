@@ -16,6 +16,7 @@ public class Usuarios {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer idUsuario;
 
+    private String tipoId;
     private String nombreUsuario;
     private String email;
     private String rol;
@@ -27,7 +28,8 @@ public class Usuarios {
     public Usuarios()
     {;}
 
-    public Usuarios(String nombreUsuario, String email, String rol, Hoteles nombreHotel) {
+    public Usuarios(String tipoId, String nombreUsuario, String email, String rol, Hoteles nombreHotel) {
+        this.tipoId = tipoId;
         this.nombreUsuario = nombreUsuario;
         this.email = email;
         this.rol = rol;
@@ -38,6 +40,10 @@ public class Usuarios {
 
     public Integer getIdUsuario() {
         return idUsuario;
+    }
+
+    public String getTipoId() {
+        return tipoId;
     }
 
     public String getNombreUsuario() {
@@ -60,6 +66,10 @@ public class Usuarios {
 
     public void setIdUsuario(Integer idUsuario) {
         this.idUsuario = idUsuario;
+    }
+
+    public void setTipoId(String tipoId) {
+        this.tipoId = tipoId;
     }
 
     public void setNombreUsuario(String nombreUsuario) {

@@ -10,17 +10,16 @@ import jakarta.persistence.ManyToOne;
 public class consumoHabitacionPK implements Serializable {
     
     @ManyToOne
-    @JoinColumn(name = "productosHabitacion_producto", referencedColumnName = "producto")
+    @JoinColumn(name = "productsHabi_producto", referencedColumnName = "producto")
     private productosHabitacion productosHabitacion;
 
     @ManyToOne
-    @JoinColumn(name = "cuentaConsumos_idCuenta", referencedColumnName = "idCuenta")
+    @JoinColumn(name = "cuentaConsu_idCuenta", referencedColumnName = "idCuenta")
     private cuentaConsumos id_bebida;
 
     //CONSTRUCTOR
 
-    public consumoHabitacionPK(uniandes.edu.co.proyecto.modelo.productosHabitacion productosHabitacion,
-            cuentaConsumos id_bebida) {
+    public consumoHabitacionPK(productosHabitacion productosHabitacion, cuentaConsumos id_bebida) {
         super();
         this.productosHabitacion = productosHabitacion;
         this.id_bebida = id_bebida;

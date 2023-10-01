@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="consumoHabitacion")
+@Table(name="consumoHabi")
 public class consumoHabitacion {
 
     @Id
@@ -22,7 +22,8 @@ public class consumoHabitacion {
     public consumoHabitacion()
     {;}
 
-    public consumoHabitacion(Integer cantidad, Integer costo) {
+    public consumoHabitacion(productosHabitacion productosHabitacion, cuentaConsumos id_bebida, Integer cantidad, Integer costo) {
+        this.idCuenta = new consumoHabitacionPK(productosHabitacion, id_bebida);
         this.cantidad = cantidad;
         this.costo = costo;
     }

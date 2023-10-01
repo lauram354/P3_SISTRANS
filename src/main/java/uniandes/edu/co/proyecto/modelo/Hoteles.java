@@ -7,12 +7,13 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "hoteles")
+@Table(name = "Hoteles")
 public class Hoteles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String nombre;
+    
     private Integer cant_habitaciones;
 
     public Hoteles(String nombre, Integer cant_habitaciones)

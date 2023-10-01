@@ -26,7 +26,7 @@ public class Habitaciones {
     private Hoteles nombreHotel;
 
     @ManyToOne
-    @JoinColumn(name = "tipoHabitaciones_tipo", referencedColumnName = "tipo")
+    @JoinColumn(name = "tipoHabi_tipo", referencedColumnName = "tipo")
     private tipoHabitaciones tipoHabitaciones;
 
     //CONSTRUCTORS

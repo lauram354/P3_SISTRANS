@@ -1,0 +1,46 @@
+package uniandes.edu.co.proyecto.modelo;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Maquinas")
+public class Maquinas {
+
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)  
+    private Integer idMaquina;
+
+    private String nombre;
+
+    //CONSTRUCTORS
+
+    public Maquinas()
+    {;}
+
+    public Maquinas(String nombre) {
+        this.nombre = nombre;
+    }
+
+    //GETTER y SETTERS
+
+    public Integer getIdMaquina() {
+        return idMaquina;
+    }
+
+    public void setIdMaquina(Integer idMaquina) {
+        this.idMaquina = idMaquina;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+    
+}

@@ -15,8 +15,8 @@ public class Reservan {
 
     //CONSTRUCTOR
 
-    public Reservan(ReservanPK pk) {
-        this.pk = pk;
+    public Reservan(Usuarios idUsuario, Reservas idReserva) {
+        this.pk = new ReservanPK(idUsuario, idReserva);
     }
 
     //GETTERS
