@@ -20,24 +20,11 @@ import uniandes.edu.co.proyecto.repositorio.ReservasRepository;
 
 
 @SpringBootApplication
-public class ProyectoApplication implements CommandLineRunner{
-
-	@Autowired
-	private ReservasRepository ReservasRepository;
+public class ProyectoApplication{
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ProyectoApplication.class, args);
 	}
 
-	@Override
-	public void run(String... args) 
-	{
-		// TODO Auto-generated method stub
-		Collection<Reservas> Reservas = ReservasRepository.darReserva(1);
-		//for (Reservas b:Reservas){
-		//	System.out.println(b);
-		//}
-		
-		
-	}
-
 }
+
