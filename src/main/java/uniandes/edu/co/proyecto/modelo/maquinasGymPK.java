@@ -10,7 +10,7 @@ public class maquinasGymPK {
     private Gimnasios idServicio;
 
     @ManyToOne
-    @JoinColumn(name = "Maquinas_Maquinas_ID", referencedColumnName = "Maquinas_ID")
+    @JoinColumn(name = "maquinas_maquinas_id", referencedColumnName = "maquinas_id")
     private Maquinas idMaquina;
 
     //CONSTRUCTOR
