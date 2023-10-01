@@ -28,18 +28,22 @@ public class Reservas {
     @JoinColumn(name = "PlanesDeConsumos_tipo", referencedColumnName = "tipo")
     private PlanesDeConsumos tipo;
 
+    private boolean check_in;
+    private boolean check_out;
     //CONSTRUCTORS
     
     public Reservas()
     {;}
 
     public Reservas(Integer numPersonas, String fechaInicial, String fechaFinal, Habitaciones habitaciones_id,
-            PlanesDeConsumos tipo) {
+            PlanesDeConsumos tipo, boolean check_in, boolean check_out) {
         this.numPersonas = numPersonas;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
         this.Habitaciones_id = habitaciones_id;
         this.tipo = tipo;
+        this.check_in = check_in;
+        this.check_out = check_out;
     }
 
     //GETTERS
@@ -68,6 +72,14 @@ public class Reservas {
         return tipo;
     }
 
+    public boolean getCheck_in() {
+        return check_in;
+    }
+
+    public boolean Check_out() {
+        return check_out;
+    }
+    
     //SETTERS
 
     public void setIdReserva(Integer idReserva) {
@@ -92,6 +104,14 @@ public class Reservas {
 
     public void setTipo(PlanesDeConsumos tipo) {
         this.tipo = tipo;
+    }
+
+    public void setCheck_in(boolean check_in) {
+        this.check_in = check_in;
+    }
+
+    public void setCheck_out(boolean check_out) {
+        this.check_out = check_out;
     }
 
 }
