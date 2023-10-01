@@ -8,32 +8,26 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "hoteles")
-public class Hotel {
+public class Hoteles {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String nombre;
-    private Integer estrellas;
     private Integer cant_habitaciones;
 
-    public Hotel(String nombre, Integer estrellas, Integer cant_habitaciones)
+    public Hoteles(String nombre, Integer cant_habitaciones)
     {
         this.nombre = nombre;
-        this.estrellas = estrellas;
         this.cant_habitaciones = cant_habitaciones;
     }
 
-    public Hotel()
+    public Hoteles()
     {;}
 
 
     //GETTERS
     public String getNombre() {
         return nombre;
-    }
-
-    public Integer getEstrellas() {
-        return estrellas;
     }
 
     public Integer getCant_habitaciones() {
@@ -43,10 +37,6 @@ public class Hotel {
     //SETTERS
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public void setEstrellas(Integer estrellas) {
-        this.estrellas = estrellas;
     }
 
     public void setCant_habitaciones(Integer cant_habitaciones) {
