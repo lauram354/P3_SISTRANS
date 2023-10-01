@@ -10,7 +10,7 @@ import org.springframework.data.repository.query.Param;
 import jakarta.transaction.Transactional;
 import uniandes.edu.co.proyecto.modelo.cuentaConsumos;
 
-public interface cuentaConsumosRepository extends JpaRepository<cuentaConsumos, Integer>{
+public interface cuentaConsumoRepository extends JpaRepository<cuentaConsumos, Integer>{
 
     //RF10 
     //Toca colocar que solo empleado
