@@ -1,16 +1,18 @@
 package uniandes.edu.co.proyecto.modelo;
 
+import java.io.Serializable;
+
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-public class maquinasGymPK {
+public class maquinasGymPK implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "Gimnasios_idServicio", referencedColumnName = "idServicio")
     private Gimnasios idServicio;
 
     @ManyToOne
-    @JoinColumn(name = "Maquinas_Maquinas_ID", referencedColumnName = "Maquinas_ID")
+    @JoinColumn(name = "maquinas_maquinas_id", referencedColumnName = "maquinas_id")
     private Maquinas idMaquina;
 
     //CONSTRUCTOR
@@ -19,6 +21,10 @@ public class maquinasGymPK {
         super();
         this.idServicio = idServicio;
         this.idMaquina = idMaquina;
+    }
+
+
+    public maquinasGymPK() {;
     }
 
     //GETTERS Y SETTERS

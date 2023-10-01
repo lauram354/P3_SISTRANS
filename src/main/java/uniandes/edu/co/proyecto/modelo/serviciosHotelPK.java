@@ -25,8 +25,11 @@ public class serviciosHotelPK implements Serializable{
         this.idServicio = idServicio;
     }
 
-    //GETTERS
 
+    public serviciosHotelPK() {;
+    }
+
+    //GETTERS
     public Hoteles getNombreHotel() {
         return nombreHotel;
     }

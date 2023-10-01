@@ -24,9 +24,12 @@ public class consumoHabitacionPK implements Serializable {
         this.productosHabitacion = productosHabitacion;
         this.id_bebida = id_bebida;
     }
+    
+
+    public consumoHabitacionPK() {;
+    }
 
     //GETTERS
-
     public productosHabitacion getProductosHabitacion() {
         return productosHabitacion;
     }

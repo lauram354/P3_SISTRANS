@@ -24,6 +24,9 @@ public class planServicioPK {
         this.idServicio = idServicio;
     }
 
+    public planServicioPK() {;
+    }
+
     public PlanesDeConsumos getPlanesConsum_tipo() {
         return planesConsum_tipo;
     }

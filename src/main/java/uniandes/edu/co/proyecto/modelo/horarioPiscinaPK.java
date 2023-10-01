@@ -23,8 +23,11 @@ public class horarioPiscinaPK implements Serializable {
         this.idPiscina = idPiscina;
         this.idHorario = idHorario;
     }
-
+    
     //GETTERS
+
+    public horarioPiscinaPK() 
+    {;}
 
     public Piscinas getIdPiscina() {
         return idPiscina;
