@@ -31,5 +31,5 @@ public interface planesConsumoRepository extends JpaRepository<PlanesDeConsumos,
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM PlanesConsum WHERE Tipo = :tipo", nativeQuery = true)
-    void eliminarUsuario(@Param("tipo") String tipo);
+    void eliminarPlanConsumo(@Param("tipo") String tipo);
 }
