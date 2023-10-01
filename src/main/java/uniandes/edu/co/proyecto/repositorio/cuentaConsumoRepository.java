@@ -18,8 +18,12 @@ public interface cuentaConsumoRepository extends JpaRepository<cuentaConsumos, I
     //
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO cuentaConsumos(pagado, idReserva, fecha) VALUES (:pagado, :(SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, Usuarios_idUsuario, check_in, check_out FROM Reservas WHERE Habitaciones_id= : 
-    Habitaciones_id), :fecha)", nativeQuery = true)
-    void insertarConsumo(@Param("pagado") boolean pagado, @Param("Habitaciones_id") String nombreUsuario, @Param("email") String email, @Param("rol") String rol, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel, @Param("tipoId") String tipoId);
+    @Query(value = "INSERT INTO cuentaConsumos(pagado, idReserva, fecha) " +
+                "SELECT :pagado, r.idReserva, :fecha " +
+                "FROM Reservas r " +
+                "WHERE r.Habitaciones_id.id = :Habitaciones_id",
+        nativeQuery = true)
+    void insertarConsumo(@Param("pagado") boolean pagado, @Param("Habitaciones_id") Integer Habitaciones_id, @Param("fecha") String fecha);
+
 
 }

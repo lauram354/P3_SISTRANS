@@ -8,6 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import uniandes.edu.co.proyecto.modelo.Reservan;
+import uniandes.edu.co.proyecto.modelo.ReservanPK;
 import uniandes.edu.co.proyecto.modelo.Reservas;
 import uniandes.edu.co.proyecto.modelo.Usuarios;
 import uniandes.edu.co.proyecto.modelo.tipoHabitaciones;
@@ -19,6 +21,7 @@ import uniandes.edu.co.proyecto.repositorio.ReservasRepository;
 
 @SpringBootApplication
 public class ProyectoApplication implements CommandLineRunner{
+
 	@Autowired
 	private ReservasRepository ReservasRepository;
 	public static void main(String[] args) {
@@ -26,12 +29,13 @@ public class ProyectoApplication implements CommandLineRunner{
 	}
 
 	@Override
-	public void run(String... args) {
+	public void run(String... args) 
+	{
 		// TODO Auto-generated method stub
-		Collection<Reservas> darReserva();
-		for (Reservas b:Reservas){
-			System.out.println(b);
-		}
+		Collection<Reservas> Reservas = ReservasRepository.darReserva(1);
+		//for (Reservas b:Reservas){
+		//	System.out.println(b);
+		//}
 		
 		
 	}

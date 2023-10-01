@@ -16,6 +16,9 @@ public interface ReservasRepository extends JpaRepository<Reservas, Integer>{
 
     //Consultar la reserva hotel. Si check_in está en false, no ha llegado. Si check_in true y check_out está en false, no se ha ido.
     //Si check_in y check_ou en false, el cliente no ha llegado al hotel.
+    @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, id, tipo,  Habitaciones_id, check_in, check_out SELECT FROM Reservas", nativeQuery = true)
+    Collection<Reservas> darReservas();
+
     @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, id, tipo,  Habitaciones_id, check_in, check_out SELECT FROM Reservas WHERE idReserva= : idReserva", nativeQuery = true)
     Collection<Reservas> darReserva(@Param("idReserva") Integer idReserva);
 
