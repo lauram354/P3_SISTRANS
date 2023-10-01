@@ -43,12 +43,12 @@ public interface UsuariosRepository extends JpaRepository<Usuarios, Integer >{
     //RF9 hace falta acualizar llegada al hotel
     //Toca colocar que estas operaciones solo recepcionista
 
-    @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, idUsuario, check_in, check_out FROM Reservas", nativeQuery = true)
+    @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, Usuarios_idUsuario, check_in, check_out FROM Reservas", nativeQuery = true)
     Collection<Reservas> darReservas();
 
     //Consultar la reserva hotel. Si check_in está en false, no ha llegado. Si check_in true y check_out está en false, no se ha ido.
     //Si check_in y check_ou en false, el cliente no ha llegado al hotel.
-    @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, idUsuario, check_in, check_out FROM Reservas WHERE idReserva= : idReserva", nativeQuery = true)
+    @Query(value = "SELECT idReserva, numPersonas, fechaInicial, fechaFinal, Habitaciones_id, tipo, Usuarios_idUsuario, check_in, check_out FROM Reservas WHERE idReserva= : idReserva", nativeQuery = true)
     Collection<Reservas> darReserva(@Param("idReserva") Integer idReserva);
 
     //Registrar llegada al hotel. 
