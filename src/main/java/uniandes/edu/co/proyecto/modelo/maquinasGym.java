@@ -13,6 +13,16 @@ public class maquinasGym {
 
     @EmbeddedId
     private maquinasGymPK pk;
-    
+    public maquinasGym(Maquinas idMaquina, Gimnasios idServicio){
+        this.pk = new maquinasGymPK(idServicio, idMaquina);
+    }
+    public maquinasGym()
+    {;}
+    public maquinasGymPK getPk() {
+        return pk;
+    }
+    public void setPk(maquinasGymPK pk) {
+        this.pk = pk;
+    }
     
 }

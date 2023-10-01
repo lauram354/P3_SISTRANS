@@ -1,9 +1,11 @@
 package uniandes.edu.co.proyecto.modelo;
 
+import java.io.Serializable;
+
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-public class maquinasGymPK {
+public class maquinasGymPK implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "Gimnasios_idServicio", referencedColumnName = "idServicio")
