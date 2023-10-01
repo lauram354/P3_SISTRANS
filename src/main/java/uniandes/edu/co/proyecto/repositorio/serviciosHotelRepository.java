@@ -16,26 +16,28 @@ public interface serviciosHotelRepository extends JpaRepository<serviciosHotel, 
     @Query(value = "SELECT * FROM servHotel", nativeQuery=true)
     Collection<serviciosHotel> darServicios();
 
-    @Query(value = "SELECT * FROM servHotel WHERE Hoteles_nombreHotel = Hoteles_nombreHotel;", nativeQuery = true)
-    serviciosHotel darHabitacion(@Param("Hoteles_nombreHotel") Integer Hoteles_nombreHotel);
+    @Query(value = "SELECT * FROM servHotel WHERE Hoteles_nombreHotel = :Hoteles_nombreHotel;", nativeQuery = true)
+    serviciosHotel darServiosPorHotel(@Param("Hoteles_nombreHotel") Integer Hoteles_nombreHotel);
 
-    /**
+    
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO Habitaciones(id, tv, minibar, cafetera, tipoHabi_tipo, Hoteles_nombreHotel) VALUES (Habitaciones_id_seq.nextval,:tv,:minibar,:cafetera, :tipoHabi_tipo, Hoteles_nombreHotel)", nativeQuery = true)
-    void insertarHabitacion( @Param("tv") Boolean tv, @Param("minibar") Boolean minibar, @Param("cafetera") Boolean cafetera,
-     @Param("tipoHabi_tipo") String tipoHabi_tipo, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
-    
+    @Query(value = "INSERT INTO servHotel(Hoteles_nombreHotel, Servicios_idServicio) VALUES (:Hoteles_nombreHotel, :Servicios_idServicio)", nativeQuery = true)
+    void insertarServicioHotel( @Param("Servicios_idServicio") Integer Servicios_idServicio, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
+
+    /**
     @Modifying
     @Transactional
     @Query(value = "UPDATE Habitaciones SET tv = :tv, minibar = :minibar, cafetera = :cafetera, tipoHabi_tipo =  tipoHabi_tipo, Hoteles_nombreHotel = :Hoteles_nombreHotel  WHERE id =:id;", nativeQuery = true)
     void actualizarHabitacion(@Param("id") Integer id, @Param("tv") Boolean tv, @Param("minibar") Boolean minibar, @Param("cafetera") Boolean cafetera,
      @Param("tipoHabi_tipo") String tipoHabi_tipo, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
 
+    */
+    
     @Modifying
     @Transactional
-    @Query(value = "DELETE FROM Habitaciones WHERE id = :id", nativeQuery = true)
-    void eliminarTipoHabitacion(@Param("id") Integer id);
-    */
+    @Query(value = "DELETE FROM servHotel WHERE Hoteles_nombreHotel = :Hoteles_nombreHotel, Servicios_idServicio = :Servicios_idServicio", nativeQuery = true)
+    void eliminarServicioHotel(@Param("Servicios_idServicio") Integer Servicios_idServicio, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
+    
 
 }
