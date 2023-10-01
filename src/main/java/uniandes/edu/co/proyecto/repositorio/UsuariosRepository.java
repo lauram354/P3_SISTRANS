@@ -21,12 +21,12 @@ public interface UsuariosRepository extends JpaRepository<Usuarios, Integer >{
     
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO Usuarios(idUsuario, nombreUsuario, email, rol, Hoteles_nombreHotel, tipoId) VALUES (:idUsuario, :nombreUsuario, :email, :rol, :nombreHotel, :tipoId)", nativeQuery = true)
+    @Query(value = "INSERT INTO Usuarios(idUsuario, nombreUsuario, email, rol, Hoteles_nombreHotel, tipoId) VALUES (:idUsuario, :nombreUsuario, :email, :rol, :Hoteles_nombreHotel, :tipoId)", nativeQuery = true)
     void insertarUsuario(@Param("idUsuario") Integer idUsuario, @Param("nombreUsuario") String nombreUsuario, @Param("email") String email, @Param("rol") String rol, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel, @Param("tipoId") String tipoId);
     
     @Modifying
     @Transactional
-    @Query(value = "UPDATE Usuarios SET tipoId = :tipoId, nombreUsuario = :nombreUsuario, email = :email, rol= :rol, Hoteles_nombreHotel = :nombreHotel WHERE idUsuario = :idUsuario", nativeQuery = true)
+    @Query(value = "UPDATE Usuarios SET tipoId = :tipoId, nombreUsuario = :nombreUsuario, email = :email, rol= :rol, Hoteles_nombreHotel = :Hoteles_nombreHotel WHERE idUsuario = :idUsuario", nativeQuery = true)
     void actualizarUsuario(@Param("idUsuario") Integer idUsuario, @Param("nombreUsuario") String nombreUsuario, @Param("email") String email, @Param("rol") String rol, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel, @Param("tipoId") String tipoId);
 
     @Modifying
