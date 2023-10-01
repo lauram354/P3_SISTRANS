@@ -21,17 +21,19 @@ public interface habitacionesRepository extends JpaRepository<Habitaciones, Inte
     
     @Modifying
     @Transactional
-    @Query(value = "INSERT INTO Habitaciones(id, tipo, tv, minibar, cafetera, tipoHabi_tipo, Hoteles_nombreHotel) VALUES ();", nativeQuery = true)
-    void insertarTipoHabitacion(@Param("tipo") String tipo, @Param("capacidad") Integer capacidad);
+    @Query(value = "INSERT INTO Habitaciones(id, tv, minibar, cafetera, tipoHabi_tipo, Hoteles_nombreHotel) VALUES (Habitaciones_id_seq.nextval,:tv,:minibar,:cafetera, :tipoHabi_tipo, :Hoteles_nombreHotel)", nativeQuery = true)
+    void insertarHabitacion( @Param("tv") Boolean tv, @Param("minibar") Boolean minibar, @Param("cafetera") Boolean cafetera,
+     @Param("tipoHabi_tipo") String tipoHabi_tipo, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
     
     @Modifying
     @Transactional
-    @Query(value = "UPDATE tipoHabi SET tipo = :tipo, capacidad = :capacidad WHERE tipo = :tipo;", nativeQuery = true)
-    void actualizarTipoHabitacion(@Param("tipo") String tipo, @Param("capacidad") Integer capacidad);
+    @Query(value = "UPDATE Habitaciones SET tv = :tv, minibar = :minibar, cafetera = :cafetera, tipoHabi_tipo =  :tipoHabi_tipo, Hoteles_nombreHotel = :Hoteles_nombreHotel  WHERE id =:id;", nativeQuery = true)
+    void actualizarHabitacion(@Param("id") Integer id, @Param("tv") Boolean tv, @Param("minibar") Boolean minibar, @Param("cafetera") Boolean cafetera,
+     @Param("tipoHabi_tipo") String tipoHabi_tipo, @Param("Hoteles_nombreHotel") String Hoteles_nombreHotel);
 
     @Modifying
     @Transactional
-    @Query(value = "DELETE FROM tipoHabi WHERE tipo = :tipo", nativeQuery = true)
-    void eliminarTipoHabitacion(@Param("tipo") String tipo);
+    @Query(value = "DELETE FROM Habitaciones WHERE id = :id", nativeQuery = true)
+    void eliminarTipoHabitacion(@Param("id") Integer id);
 
 }
