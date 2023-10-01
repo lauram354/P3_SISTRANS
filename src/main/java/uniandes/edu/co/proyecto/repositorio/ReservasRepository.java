@@ -23,15 +23,15 @@ public interface ReservasRepository extends JpaRepository<Reservas, Integer >{
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO reservas(IdReserva, NumPersonas, fechaInicial, fechaFinal, tipo) VALUES (:idReserva, :numPersonas, :fechaI, :fechaF, :tipo)", nativeQuery = true)
-    void insertarUsuario(@Param("idReserva") Integer idReserva, @Param("numPersonas") String numPersonas, @Param("fechaI") Date fechaI, @Param("fechaF") Date fechaF, @Param("tipo") String tipo);
+    void insertarReserva(@Param("idReserva") Integer idReserva, @Param("numPersonas") String numPersonas, @Param("fechaI") Date fechaI, @Param("fechaF") Date fechaF, @Param("tipo") String tipo);
     
     @Modifying
     @Transactional
-    @Query(value = "UPDATE reservas SET IdReserva = :idReserva, NumPersonas = :numPersonas, fechaInicial = :feachI, fechaFinal = :fechaF, tipo = :tipo WHERE idReserva = :idReserva", nativeQuery = true)
-    void actualizarUsuario(@Param("idReserva") Integer idReserva, @Param("numPersonas") String numPersonas, @Param("fechaI") Date fechaI, @Param("fechaF") Date fechaF, @Param("tipo") String tipo);
+    @Query(value = "UPDATE reservas SET IdReserva = :idReserva, NumPersonas = :numPersonas, fechaInicial = :fechaI, fechaFinal = :fechaF, tipo = :tipo WHERE idReserva = :idReserva", nativeQuery = true)
+    void actualizarReserva(@Param("idReserva") Integer idReserva, @Param("numPersonas") String numPersonas, @Param("fechaI") Date fechaI, @Param("fechaF") Date fechaF, @Param("tipo") String tipo);
 
     @Modifying
     @Transactional
     @Query(value = "DELETE FROM reservas WHERE idReserva = :idReserva", nativeQuery = true)
-    void eliminarUsuario(@Param("idReserva") Integer idReserva);
+    void eliminarReserva(@Param("idReserva") Integer idReserva);
 }
