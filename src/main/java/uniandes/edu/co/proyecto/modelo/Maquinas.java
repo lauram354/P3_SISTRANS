@@ -12,7 +12,7 @@ public class Maquinas {
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)  
-    private Integer idMaquina;
+    private Integer maquinas_id;
 
     private String nombre;
 
@@ -27,12 +27,12 @@ public class Maquinas {
 
     //GETTER y SETTERS
 
-    public Integer getIdMaquina() {
-        return idMaquina;
+    public Integer getMaquinasId() {
+        return maquinas_id;
     }
 
-    public void setIdMaquina(Integer idMaquina) {
-        this.idMaquina = idMaquina;
+    public void setMaquinasId(Integer idMaquina) {
+        this.maquinas_id = idMaquina;
     }
 
     public String getNombre() {

@@ -1,17 +1,18 @@
 package uniandes.edu.co.proyecto.modelo;
 
+import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
 @Table(name="Piscinas")
 public class Piscinas {
 
-    @Id
-    @JoinColumn(name = "idServicio", referencedColumnName = "idServicio")
-    private Servicios idServicio;
+    @EmbeddedId
+    private PiscinasPK pk;
 
     private Integer capacidad;
     private Float profundidad;
@@ -20,14 +21,15 @@ public class Piscinas {
     public Piscinas()
     {;}
 
-    public Piscinas(Integer capacidad, Float profundidad, Float costo) {
+    public Piscinas(Servicios idServicios, Integer capacidad, Float profundidad, Float costo) {
+        this.pk = new PiscinasPK(idServicios);
         this.capacidad = capacidad;
         this.profundidad = profundidad;
         this.costo = costo;
     }
 
-    public Servicios getIdServicio() {
-        return idServicio;
+    public PiscinasPK getPk() {
+        return pk;
     }
 
     public Integer getCapacidad() {
@@ -42,8 +44,8 @@ public class Piscinas {
         return costo;
     }
 
-    public void setIdServicio(Servicios idServicio) {
-        this.idServicio = idServicio;
+    public void setPk(PiscinasPK pk) {
+        this.pk = pk;
     }
 
     public void setCapacidad(Integer capacidad) {
