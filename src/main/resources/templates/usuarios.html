@@ -24,11 +24,11 @@
             <th:block th:each="usuario:${usuarios}">
                 <tr>
                     <td th:text="${usuario.idUsuario}"></td>
-                    <td th:text="${usuario.tipoId}"></td>
+                    <td th:text="${usuario.tipoID}"></td>
                     <td th:text="${usuario.nombreUsuario}"></td>
                     <td th:text="${usuario.email}"></td>
                     <td th:text="${usuario.rol}"></td>
-                    <td th:text="${usuario.nombreHotel}"></td>
+                    <td th:text="${usuario.Hoteles_nombreHotel}"></td>
                     <td>
                         <a th:href="@{usuarios/{id}/edit{id=${usuario.idUsuario}}}">
                             Editar
