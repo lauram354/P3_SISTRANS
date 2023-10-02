@@ -13,9 +13,7 @@ import uniandes.edu.co.proyecto.modelo.cuentaConsumos;
 public interface cuentaConsumoRepository extends JpaRepository<cuentaConsumos, Integer>{
 
     //RF10 
-    //Toca colocar que solo empleado
-    //
-    //
+    //Agregar cuenta de consumo
     @Modifying
     @Transactional
     @Query(value = "INSERT INTO cuentaConsumos(pagado, idReserva, fecha) " +
@@ -24,6 +22,28 @@ public interface cuentaConsumoRepository extends JpaRepository<cuentaConsumos, I
                 "WHERE r.Habitaciones_id.id = :Habitaciones_id",
         nativeQuery = true)
     void insertarConsumo(@Param("pagado") boolean pagado, @Param("Habitaciones_id") Integer Habitaciones_id, @Param("fecha") String fecha);
+
+    //Actualizar consumo
+    @Modifying
+    @Transactional
+    
+    @Query(value = "UPDATE cuentaConsumos SET pagado = :pagado, fecha = :fecha " +
+                    "WHERE idReserva IN (SELECT r.idReserva FROM Reservas r " +
+                                        "WHERE r.Habitaciones_id.id = :Habitaciones_id)",
+            nativeQuery = true)
+        
+    void actualizarConsumo(@Param("pagado") boolean pagado, @Param("Habitaciones_id") Integer Habitaciones_id, @Param("fecha") String fecha);
+
+    //Borrar consumo
+    @Modifying
+    @Query(value = "DELETE FROM cuentaConsumos " +
+                "WHERE idReserva IN (SELECT r.idReserva FROM Reservas r " +
+                                    "WHERE r.Habitaciones_id.id = :Habitaciones_id)",
+        nativeQuery = true)
+    void borrarConsumosPorNumeroHabitacion(@Param("Habitaciones_id") Integer Habitaciones_id);
+
+
+
 
 
 }
