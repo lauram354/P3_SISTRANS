@@ -15,21 +15,23 @@ public class cuentaConsumos {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private Integer idCuenta;
-
+    
     private Boolean pagado;
 
     @ManyToOne
     @JoinColumn(name = "Reservas_idReserva", referencedColumnName = "idReserva")
     private Reservas idReserva;
 
+    private String fecha;
     //CONSTRUCTORS
 
     public cuentaConsumos()
     {;}
 
-    public cuentaConsumos(Boolean pagado, Reservas idReserva) {
+    public cuentaConsumos(Boolean pagado, Reservas idReserva, String fecha) {
         this.pagado = pagado;
         this.idReserva = idReserva;
+        this.fecha = fecha;
     }
 
     //GETTERS
@@ -46,6 +48,11 @@ public class cuentaConsumos {
         return idReserva;
     }
 
+    public String getFecha() {
+        return fecha;
+    }
+
+    
     //SETTERS
 
     public void setIdCuenta(Integer idCuenta) {
@@ -58,6 +65,10 @@ public class cuentaConsumos {
 
     public void setIdReserva(Reservas idReserva) {
         this.idReserva = idReserva;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
 }
