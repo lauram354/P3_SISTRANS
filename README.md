@@ -17,7 +17,7 @@ Esta aplicación es una aplicación de base de datos con SQL que utiliza Oracle 
 4. Una vez se encuentre en la pagina principal encontrará un formularo básico de inicio de sesión y una tabla.
 5. Use los datos de login suministrados en la tabla para acceder a la aplicación con el tipo de usuario que desee.
 6. Recuerde que según el tipo de usuario con el que ingrese la aplicación le permitira realizar ciertas acciones en específico.
-7. Navega por la aplicación de Hotel de los Andes.
+7. Navegue por la aplicación de Hotel de los Andes.
 ## Integrantes grupo B6
 1. Laura Sofia Murcia – 202123099
 2. Sara Benavides Mora – 202022464
