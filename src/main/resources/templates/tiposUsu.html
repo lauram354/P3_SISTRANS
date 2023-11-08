@@ -30,8 +30,14 @@
             </th:block>
         </table>
 
+        <h1>Consulta de Consumos</h1>
+        <a th:href="@{/consumos/clientesExcelentes}" class="btn btn-primary">Ver Clientes Excelentes</a>
+        <a th:href="@{/consumos/consumoporcaracteristica}" class="btn btn-primary"> Consultar Consumo HotelAndes </a>
+        <a th:href="@{/consumos/buenosClientes}" class="btn btn-primary"> Consultar Buenos Clientes </a>
+        <a th:href="@{/consumos/noconsumoporcaracteristica}" class="btn btn-primary"> Consultar No Consumo HotelAndes </a>
+
         <div>
-            <a th:href="@{/}" class="btn btn-primary">Volver Atrás</a>
+            <a th:href="@{consumos/consumoporfechas}" class="btn btn-primary">Consumo por usuario y fechas</a>
         </div>
 
     </div>
