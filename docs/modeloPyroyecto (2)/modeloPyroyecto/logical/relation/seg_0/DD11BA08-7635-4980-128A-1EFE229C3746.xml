@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="consumosHabitacion" directorySegmentName="seg_0" id="DD11BA08-7635-4980-128A-1EFE229C3746">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-31 15:34:02 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>00BA3629-FEDE-AD3F-EE02-D77BA41524E3</sourcePk>
+<targetPk>CCC880C2-9535-807A-131C-F05C32BE6868</targetPk>
+<dominantRole>76F8AA9A-0452-5326-1360-07F227874224</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6574FD8D-D082-473F-8650-1DEFC1F6B1C1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>76F8AA9A-0452-5326-1360-07F227874224</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

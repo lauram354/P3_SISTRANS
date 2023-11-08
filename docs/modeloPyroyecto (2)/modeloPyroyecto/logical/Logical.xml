@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="4516A1B9-E6A3-11E3-052B-FEC710C9CB13" mainViewID="2827B15A-FCCC-FFD1-C1C1-FB36C97203CE">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:20:10 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

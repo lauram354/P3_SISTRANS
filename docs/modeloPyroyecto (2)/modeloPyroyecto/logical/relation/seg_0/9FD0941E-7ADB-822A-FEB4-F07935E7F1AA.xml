@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="horaSpa" directorySegmentName="seg_0" id="9FD0941E-7ADB-822A-FEB4-F07935E7F1AA">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:37:16 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>0F899738-BD7E-C09A-E68F-60A165EB15A6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6F36F86E-07DC-64EE-E138-E27AD8D311F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4A286E0-B252-1D8B-DCE1-A3DC9A472B01" name="consumos">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>6574FD8D-D082-473F-8650-1DEFC1F6B1C1</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idConsumo" id="B04CAAEC-E36C-A2AD-72D2-DD825C95A8A9">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>C448935C-A60B-AD1D-DC95-0B592A59273B</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pagado" id="AC51EE0B-B8F1-DC05-580E-9CC07AE535CD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>35493C01-CB60-CA00-66F2-8FD9EFBDA807</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="costoFinal" id="4F366C05-AD43-EED8-CE85-B01ABF4724D4">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>56F566B5-1D95-FB64-52BB-4282B807FB02</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cuentas_idCuenta" id="D32B6648-B6F1-F5D1-C99D-F7415EA643D1">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D97A8434-8AAA-539B-2502-E4CF407832C1</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BB7133BD-EC88-9BE9-F593-6EC6143D5E19" referredColumn="4D7D4B3A-7192-89FF-4815-27A6124FDF52"/>
+</associations>
+</Column>
+<Column name="fecha" id="09CCC76F-AEAA-B66B-95EF-15D8ABB0EBE5">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-31 15:34:59 UTC</createdTime>
+<generatorID>C3B9741E-1CF5-E6CD-2A26-9E990DAE60FB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Habis_id_habitacion" id="B22FB953-DAA2-BC30-B746-97F2936A87B2">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-31 15:35:49 UTC</createdTime>
+<generatorID>49FB4357-91B4-5184-8E7D-CC0EA7B0FD04</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="967C6B5D-0838-6058-5F3E-BF0C3F43899B" referredColumn="C106712F-E94B-D1B4-6CEA-AF12BD97C095"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6D35F93-830E-68A9-FC59-AB85F44BC746" name="consumos_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>00BA3629-FEDE-AD3F-EE02-D77BA41524E3</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B04CAAEC-E36C-A2AD-72D2-DD825C95A8A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="358F37E7-44F9-AF1A-8A32-853A82FDCE19" name="consumos__IDX">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-31 15:35:49 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DD11BA08-7635-4980-128A-1EFE229C3746</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B22FB953-DAA2-BC30-B746-97F2936A87B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="082844A6-488A-AAB4-993B-0AFC641E0D25" name="consumos_Cuentas_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>7953F4A8-FE61-75D3-0B0E-2457C952BF4F</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D32B6648-B6F1-F5D1-C99D-F7415EA643D1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1F5B30A-DD66-D5DE-0A08-3514416CE975" name="consumos_Habis_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-31 15:35:49 UTC</createdTime>
+<generatorID>DD11BA08-7635-4980-128A-1EFE229C3746</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B22FB953-DAA2-BC30-B746-97F2936A87B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

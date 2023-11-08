@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="cuentaReserv" directorySegmentName="seg_0" id="B78FB622-73C3-DB88-6857-B0B1BB309DB3">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:35:00 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>B97EE383-1C1A-737E-A224-7EE8A5971633</sourcePk>
+<targetPk>53361F67-FF2F-0440-C3BC-CE93A762A199</targetPk>
+<dominantRole>E4B61DA7-9E8B-92E2-DC9C-377E5C4843E0</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9CEE2962-3F24-573F-608A-23A2105F2ED1</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E4B61DA7-9E8B-92E2-DC9C-377E5C4843E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

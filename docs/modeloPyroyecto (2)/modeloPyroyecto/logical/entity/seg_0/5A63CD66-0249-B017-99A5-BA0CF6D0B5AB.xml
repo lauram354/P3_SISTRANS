@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5A63CD66-0249-B017-99A5-BA0CF6D0B5AB" name="Resto">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:26:19 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<hierarchicalParent>4B18351D-981B-F3DF-527C-E428828F2024</hierarchicalParent>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="capacidad" id="2720F909-BA9A-7C0B-EC9B-7C459B342EE5">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:26:28 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estilo" id="55746352-35E0-AA0C-1F87-33EB03435CDD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:26:36 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="5829867C-BF7D-CDE9-DBDA-0AE06771D512">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:26:49 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BDAA7455-947F-4D47-F624-28BB43821E70" name="TiposHabi">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:27:41 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idTipoHabi" id="8DCD9CED-1B62-2719-9F9F-12E144CDCE58">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 03:18:21 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo" id="44DF176D-FCCE-D796-B0F3-B6BC3AA1B3A4">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:27:58 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre" id="24487529-AF15-D454-E7DC-A175C9A386C1">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:33:47 UTC</createdTime>
+<generatorID>87197F94-7B58-FE65-2BAE-C1148EFD3365</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<referedAttribute>0A22A781-012B-9D22-7112-C6523A8436CE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="costo_alojamiento" id="7A49ADF6-ED9E-EB13-3A6B-964AEB9C5983">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:28:12 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="capacidad" id="DF318C9D-CA0E-E880-7E8C-0ED39273108B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:33:25 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5516547F-5666-A581-9A9B-E519F164354D" name="Tipos_habitaciones PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:28:11 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="false"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DCD9CED-1B62-2719-9F9F-12E144CDCE58</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8A03DD0-58D3-AB2D-3AD4-6A76AC003A80" name="Hoteles">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>EDA4F15C-D4F2-62B7-7999-201F970BA9B4</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="D5D33334-A4EA-9544-1276-6F48E354A168">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>0A22A781-012B-9D22-7112-C6523A8436CE</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2046BD6-DF5C-3CC5-E464-D64639158EB3" name="Hoteles_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>99DBFBF8-14C3-54EB-B956-7265CE3AD8B1</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5D33334-A4EA-9544-1276-6F48E354A168"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

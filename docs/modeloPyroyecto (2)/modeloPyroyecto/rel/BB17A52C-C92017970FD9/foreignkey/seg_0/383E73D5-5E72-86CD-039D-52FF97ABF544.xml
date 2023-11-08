@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="383E73D5-5E72-86CD-039D-52FF97ABF544" containerWithKeyObject="E0342627-52FB-125B-568C-A6CD769D6BEF" localFKIndex="DD3C2B2E-7A0A-781A-49B7-E7ADA1EA9D8E" name="menuResto_Menu_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>988AB0BD-A4BF-F096-23C3-FD5FA187E8CF</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>Menu</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C9EB72A4-9343-413B-514A-F3DA5D69FE34</referredTableID>
+<keyObject>235DE56E-C5CC-0E5F-E163-3DCA00F60B96</keyObject>
+<referredKeyID>235DE56E-C5CC-0E5F-E163-3DCA00F60B96</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idProducto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

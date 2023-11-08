@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0342627-52FB-125B-568C-A6CD769D6BEF" name="menuResto">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Resto_idServicio" id="4AD20235-A2A2-FC8E-872E-AFF50FBEA38E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EEEEDF6E-A099-6652-1417-7D70E4B2B003" referredColumn="198093A1-5661-3F42-8440-FD51DD06D68E"/>
+</associations>
+</Column>
+<Column name="Menu_idProducto" id="FDEDB62D-EF69-5DC2-E3A8-A14B441E977A">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="383E73D5-5E72-86CD-039D-52FF97ABF544" referredColumn="3CE5E071-6F88-DF7C-B728-B16C6DDF2DDC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59D3FF00-1342-038E-E319-934D7BD64F80" name="menuResto_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD20235-A2A2-FC8E-872E-AFF50FBEA38E"/>
+<colUsage columnID="FDEDB62D-EF69-5DC2-E3A8-A14B441E977A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5E21F2A-CFAF-96CA-49E6-009A4E4643A5" name="menuResto_Resto_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>988AB0BD-A4BF-F096-23C3-FD5FA187E8CF</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4AD20235-A2A2-FC8E-872E-AFF50FBEA38E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD3C2B2E-7A0A-781A-49B7-E7ADA1EA9D8E" name="menuResto_Menu_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>988AB0BD-A4BF-F096-23C3-FD5FA187E8CF</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FDEDB62D-EF69-5DC2-E3A8-A14B441E977A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

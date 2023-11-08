@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5265F7B4-5A8E-55CD-E77D-9E1450E1F720" name="usuReservas">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Usuarios_id" id="8E6A3D0C-F075-C4B4-A856-9381CCE5BC2E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F0EB539-DF65-4738-1607-1F5BB1D2DBC3" referredColumn="E1A36329-CDA4-E988-106A-21BC06BBF8CC"/>
+</associations>
+</Column>
+<Column name="Reservas_idReserva" id="F0917926-83A7-E3E7-4ACF-E63AF81BB033">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ADE49345-7C95-5B36-26F3-798D6CDD3E06" referredColumn="13626DC0-6975-212B-13CD-67871670AA73"/>
+</associations>
+</Column>
+<Column name="checkIn" id="D6F74165-EEEA-5B68-FD86-D7B432425A0D">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>A1FB5F6D-105E-EB95-A8D4-197D3C6B40B4</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+<Column name="checkOut" id="9F8FB8A0-1281-3E1F-1B2F-D7E81C3AA039">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>2EEC4BBE-A9CE-0FC7-799F-CA0C2760ADC3</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EC06829-4822-F1F0-93F0-88F3CDEA6C16" name="usuReservas_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6A3D0C-F075-C4B4-A856-9381CCE5BC2E"/>
+<colUsage columnID="F0917926-83A7-E3E7-4ACF-E63AF81BB033"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67FEDFD1-1C31-8E53-DA37-3D2DE85D2847" name="usuReservas_Usuarios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>1B85BE9D-623E-DC1A-931C-9107E5B63F60</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E6A3D0C-F075-C4B4-A856-9381CCE5BC2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D31CE3BD-0A15-5399-FDF9-F7290C4D15D4" name="usuReservas_Reservas_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>1B85BE9D-623E-DC1A-931C-9107E5B63F60</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0917926-83A7-E3E7-4ACF-E63AF81BB033"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

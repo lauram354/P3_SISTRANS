@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="26B4F06D-6B46-3757-9E9F-D0D5681D1B57">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-23 23:20:10 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

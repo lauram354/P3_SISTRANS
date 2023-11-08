@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="hotelReserv" directorySegmentName="seg_0" id="500031B2-7387-167F-D6F8-B302A274DCA7">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 23:23:44 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>99DBFBF8-14C3-54EB-B956-7265CE3AD8B1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EDA4F15C-D4F2-62B7-7999-201F970BA9B4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9CEE2962-3F24-573F-608A-23A2105F2ED1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

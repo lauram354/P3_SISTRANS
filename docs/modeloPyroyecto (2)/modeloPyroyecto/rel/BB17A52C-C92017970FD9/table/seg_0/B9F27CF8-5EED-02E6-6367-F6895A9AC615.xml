@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B9F27CF8-5EED-02E6-6367-F6895A9AC615" name="Bar">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>4540C1EE-544C-192B-ABCE-3B2AF6037CAD</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="F54A2089-5B29-F882-DF6A-C56974FA207C">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D4F53E92-AA1D-8B79-9403-7B74EA96E042</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A64D50E9-6552-4326-762A-530743E98A51" referredColumn="176D5F88-4E68-E6D2-EAAD-8E0815825AB9"/>
+</associations>
+</Column>
+<Column name="capacidad" id="9919B536-CCE1-DFC2-EF8B-E457FD7AC2BF">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>11D4BD3A-0F06-1F33-352B-010ECEE2F456</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="estilo" id="22B46CD6-608D-E4A2-E330-E33EDAB00E31">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>205042F6-09D9-CC32-95C4-02E03B86B714</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="B2B6256F-9F99-D4AD-24C4-13D6A0AC55E7">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>4CC1ECE7-BEC1-BE16-5581-FAC6F2F8B4EF</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C69D11BC-5691-F37C-D798-2AD5B695291E" name="Bar_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F54A2089-5B29-F882-DF6A-C56974FA207C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0297FF67-7651-ED50-44DB-91B3F2CC2ECE" name="Bar_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D7682E32-9BEF-C60C-3379-F5E4CDC1ECAB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F54A2089-5B29-F882-DF6A-C56974FA207C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

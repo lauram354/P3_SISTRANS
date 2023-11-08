@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B21AD726-701D-F81A-9047-E6FC54507519" name="Piscina">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>AAAD796D-A7BE-6D69-E8BE-B28A8C5C55C6</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="3B8F6617-BB8A-A7DC-FD0C-7ACD0F778B81">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D4F53E92-AA1D-8B79-9403-7B74EA96E042</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69784BAE-9500-53A1-26C0-82C6F513EC6C" referredColumn="176D5F88-4E68-E6D2-EAAD-8E0815825AB9"/>
+</associations>
+</Column>
+<Column name="capacidad" id="DE767158-B144-7E69-4625-DD66F3177D6E">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>07F843F3-E665-1135-1DD6-C13BA6D04618</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profundidad" id="7A798950-FD5C-432C-3D03-C57644688CA2">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>2ABE7E12-2420-9D0D-5670-A60C96B3A13F</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="79C1436B-C695-B2F4-20A3-211974677653" name="Piscina_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B8F6617-BB8A-A7DC-FD0C-7ACD0F778B81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7BA6614-4CB6-3AF6-8590-34675E6AAA92" name="Piscina_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>B9419E1A-9D6B-2751-B49E-240C92F6F33C</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3B8F6617-BB8A-A7DC-FD0C-7ACD0F778B81"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C54D7934-3424-ABD5-16BF-E76978797B13" name="SPA">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>0F899738-BD7E-C09A-E68F-60A165EB15A6</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="D888797A-BBAC-8CEB-EA4B-3A1C90AA419D">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D4F53E92-AA1D-8B79-9403-7B74EA96E042</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16A1C77F-F5E3-5F9C-F58B-384098BC7AB7" referredColumn="176D5F88-4E68-E6D2-EAAD-8E0815825AB9"/>
+</associations>
+</Column>
+<Column name="duracion" id="84AFEE8C-EA19-63AB-DA17-1FDFA7D9A5F6">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>29F8F081-1F56-0B26-F0B7-F3613B5FEA5D</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="082E39D5-1113-606A-4626-2D91FE20405A" name="SPA_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D888797A-BBAC-8CEB-EA4B-3A1C90AA419D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9129F061-F23C-2FA8-CABE-86751B12B770" name="SPA_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>98327978-F75E-FF5E-DCB9-FB71E6B6D56A</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D888797A-BBAC-8CEB-EA4B-3A1C90AA419D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

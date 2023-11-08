@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="500FA6DC-2081-8B7D-D668-3057B90B8270" containerWithKeyObject="CE3B4F61-0F24-17D7-D815-C24D33C02B5A" localFKIndex="0E658FA3-6F67-D4DA-E1AC-40B87790E00D" name="Horarios_SPA_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>9FD0941E-7ADB-822A-FEB4-F07935E7F1AA</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>SPA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C54D7934-3424-ABD5-16BF-E76978797B13</referredTableID>
+<keyObject>082E39D5-1113-606A-4626-2D91FE20405A</keyObject>
+<referredKeyID>082E39D5-1113-606A-4626-2D91FE20405A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idServicio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

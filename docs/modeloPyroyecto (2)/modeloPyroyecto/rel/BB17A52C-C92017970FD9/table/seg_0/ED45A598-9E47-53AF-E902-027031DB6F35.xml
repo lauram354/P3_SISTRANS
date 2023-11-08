@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ED45A598-9E47-53AF-E902-027031DB6F35" name="Super">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>4C31DA47-08DB-CE29-793C-B4D46D3E7700</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="E11CADAC-26B1-C910-68E4-9D0CD7551342">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D4F53E92-AA1D-8B79-9403-7B74EA96E042</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7431622B-0763-C379-23FF-B43517E6FD2F" referredColumn="176D5F88-4E68-E6D2-EAAD-8E0815825AB9"/>
+</associations>
+</Column>
+<Column name="estilo" id="C97E5F9F-43B1-7DF0-2FC0-A81E9830099B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>CFBA5ADD-07CA-9D4A-0878-03DB664C0B39</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B9DAD226-F6C6-529E-B41A-1FABEE6D4054" name="Super_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E11CADAC-26B1-C910-68E4-9D0CD7551342"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="71D2FE53-07F4-FEB7-4F13-F5C70F5E4D26" name="Super_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>12D32A47-4D3C-EC78-C0FE-B88EEA71547B</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E11CADAC-26B1-C910-68E4-9D0CD7551342"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

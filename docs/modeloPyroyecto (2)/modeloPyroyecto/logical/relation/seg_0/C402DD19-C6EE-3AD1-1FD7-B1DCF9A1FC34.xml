@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_25" directorySegmentName="seg_0" id="C402DD19-C6EE-3AD1-1FD7-B1DCF9A1FC34">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 23:20:54 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>FF2EE294-6D09-ED25-78F0-0D6D4844EA50</sourcePk>
+<targetPk>00BA3629-FEDE-AD3F-EE02-D77BA41524E3</targetPk>
+<dominantRole>6574FD8D-D082-473F-8650-1DEFC1F6B1C1</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B961B2FE-96E9-304E-1D44-16A02443FD72</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6574FD8D-D082-473F-8650-1DEFC1F6B1C1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E7A577E5-BCA4-590F-1214-DFB770A8F58B" containerWithKeyObject="4F53EE5A-9D57-E4DD-FF2B-E74D385B6EC4" localFKIndex="2863B7E9-8475-C4C5-80AF-CB9241D4FB91" name="Utensilios_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>FF24707E-2261-0A9A-B1EF-D76DC71ECDCE</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>Servicios</referredTableLongName>
+<arc>5F8D77C9-6E69-AA53-3979-C4116415E220</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6FAEE312-6B10-4DDB-F0F5-1D859AA3860A</referredTableID>
+<keyObject>BE9A98CD-E7BB-CF31-D963-A512E3F43DC9</keyObject>
+<referredKeyID>BE9A98CD-E7BB-CF31-D963-A512E3F43DC9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idServicio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>Utensilios</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

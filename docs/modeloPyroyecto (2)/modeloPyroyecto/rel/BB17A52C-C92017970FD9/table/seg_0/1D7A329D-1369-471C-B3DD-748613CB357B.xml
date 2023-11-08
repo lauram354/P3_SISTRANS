@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1D7A329D-1369-471C-B3DD-748613CB357B" name="Internet">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>34AFFD6C-EA24-811F-B97A-0B23FE9721B8</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idServicio" id="487C1B68-43A1-D325-A640-A753258C98CD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D4F53E92-AA1D-8B79-9403-7B74EA96E042</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A29A7471-13AF-F1AC-479D-FE09F0D5BAA1" referredColumn="176D5F88-4E68-E6D2-EAAD-8E0815825AB9"/>
+</associations>
+</Column>
+<Column name="capacidad" id="6881C51B-9DF4-EC64-67F2-3DF8222E5F47">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>AE2F9ED2-1612-9158-1F89-FE2752F4E35F</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EE4662DA-9286-E091-D26C-0E0361759F96" name="Internet_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="487C1B68-43A1-D325-A640-A753258C98CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="245DCB61-0150-E7E5-D07E-3CD997176193" name="Internet_Servicios_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>764494F9-789E-A0BA-CE6B-893CF0AAB1FB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="487C1B68-43A1-D325-A640-A753258C98CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

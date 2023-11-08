@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A94E92B9-FE18-8B53-6F9F-5DA2514FDC68" containerWithKeyObject="14E807EC-BE00-D591-C3B5-FDF6D2499CB9" localFKIndex="B33EA01E-CB32-8F77-AFD4-CA8AC8DED98E" name="MenuBar_Bar_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>D33DE39B-11AC-6F78-3165-FE3780ED3A66</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>Bar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B9F27CF8-5EED-02E6-6367-F6895A9AC615</referredTableID>
+<keyObject>C69D11BC-5691-F37C-D798-2AD5B695291E</keyObject>
+<referredKeyID>C69D11BC-5691-F37C-D798-2AD5B695291E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idServicio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

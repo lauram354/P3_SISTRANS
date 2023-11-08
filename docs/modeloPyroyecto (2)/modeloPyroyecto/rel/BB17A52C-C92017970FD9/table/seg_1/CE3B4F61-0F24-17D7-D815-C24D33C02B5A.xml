@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CE3B4F61-0F24-17D7-D815-C24D33C02B5A" name="Horarios">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>6F36F86E-07DC-64EE-E138-E27AD8D311F4</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idHorario" id="DA2DBBA6-C419-EB42-A365-321ED7D0B8B9">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>5C20418C-42E5-D7B5-CE1A-40DF1E7F43F7</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dias" id="739FAFCF-95E3-B280-E8E4-DBCA1C9A5051">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>C4BDC905-9A27-A056-21A1-0790DFC4FF58</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horaInicial" id="2C954818-B777-7E22-37BE-21F1943D360D">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>8BD0ECDC-5409-06B5-DE64-991EDD866FC6</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horaFinal" id="83C2D9C2-3036-7FF8-6D0E-B1EEA89E980F">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>7E34CB1B-A2A0-7DE7-88FF-5F55A451832A</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Piscina_idServicio" id="815EC526-FEAE-8BA1-F046-1BB3A823C0CD">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>E7EB4FE7-B0D7-1ACB-3EF5-8BB189DADFE7</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="054B945B-9E3D-F353-3104-9335CC2AB252" referredColumn="3B8F6617-BB8A-A7DC-FD0C-7ACD0F778B81"/>
+</associations>
+</Column>
+<Column name="Gym_idServicio" id="1F957A22-EC11-0785-0D09-B3D6C3A2BFB7">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>B0CF126C-58EB-7284-3D68-FFE6F06C44D3</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AE03BE62-B84B-C5BE-211B-E9A77137B3E7" referredColumn="7E413B82-6183-9670-4470-B1B031FAAA7A"/>
+</associations>
+</Column>
+<Column name="SPA_idServicio" id="DB4F3A88-3712-163C-89AE-B33392F678E3">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>76785283-7968-0EC8-A5F7-0A82B21EAF56</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="500FA6DC-2081-8B7D-D668-3057B90B8270" referredColumn="D888797A-BBAC-8CEB-EA4B-3A1C90AA419D"/>
+</associations>
+</Column>
+<Column name="ocupado" id="B9F48CEA-EA97-FEA0-FFC6-B51CE02012B0">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>0734D639-2398-C39C-02E1-9CEEDF3F63B9</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Salones_idServicio" id="2612A9C8-84A6-2937-AF92-D423E44F2C5C">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>F5108C88-9886-EBB1-09AE-57AD9451478F</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EECACDEA-8D8F-84F7-CA86-568945B317F2" referredColumn="8207FB2A-3904-B80F-FBAB-754EFC9784BA"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1975587E-E853-5646-2039-61AA2CA8BF07" name="Horarios_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-29 04:36:24 UTC</createdTime>
+<generatorID>AD0B2ABF-6E37-6EFD-361B-6054352DE653</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA2DBBA6-C419-EB42-A365-321ED7D0B8B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA486E39-2E9D-F879-FA7A-A610D6E8258C" name="Horarios_Gym_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>379AB61B-B232-475A-9BAF-B24ACF7B73EB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F957A22-EC11-0785-0D09-B3D6C3A2BFB7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F5E7911-428B-E819-57E2-5A86D771DE7D" name="Horarios_Piscina_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>FF727DF7-B5C1-9EE5-0060-C6D5FE267583</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="815EC526-FEAE-8BA1-F046-1BB3A823C0CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB4FE140-1AAF-0CFB-D099-E74F90B28D6A" name="Horarios_Salones_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>BB277272-6653-2AF9-4B1D-E42E087E4584</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2612A9C8-84A6-2937-AF92-D423E44F2C5C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E658FA3-6F67-D4DA-E1AC-40B87790E00D" name="Horarios_SPA_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>9FD0941E-7ADB-822A-FEB4-F07935E7F1AA</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB4F3A88-3712-163C-89AE-B33392F678E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

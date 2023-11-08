@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C2D2D5B5-B6A1-8903-2A20-F34B7981F498" containerWithKeyObject="16BF9085-B516-FAB5-39F6-6486C193DD64" localFKIndex="49318985-74F1-63B3-9CF4-97F88648412E" name="Reservas_Cuentas_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>B78FB622-73C3-DB88-6857-B0B1BB309DB3</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>Cuentas</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6E6D99D0-1F9B-C29B-0B6B-297D68688456</referredTableID>
+<keyObject>FBAE1952-C358-61AF-A923-C5A42AEA7083</keyObject>
+<referredKeyID>FBAE1952-C358-61AF-A923-C5A42AEA7083</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idCuenta</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

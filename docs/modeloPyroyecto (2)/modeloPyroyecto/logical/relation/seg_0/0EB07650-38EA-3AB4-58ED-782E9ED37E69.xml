@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usuServ" directorySegmentName="seg_0" id="0EB07650-38EA-3AB4-58ED-782E9ED37E69">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-26 23:18:55 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>C6776980-C603-225A-B4DC-611FD548AE47</sourcePk>
+<identifying>false</identifying>
+<nameOnTarget>registro</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>23609A60-06E4-CE92-0D26-003C601E93F9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B961B2FE-96E9-304E-1D44-16A02443FD72</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

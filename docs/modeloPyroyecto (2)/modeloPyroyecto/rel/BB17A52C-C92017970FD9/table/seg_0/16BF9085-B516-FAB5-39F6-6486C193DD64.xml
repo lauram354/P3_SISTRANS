@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16BF9085-B516-FAB5-39F6-6486C193DD64" name="Reservas">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>9CEE2962-3F24-573F-608A-23A2105F2ED1</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idReserva" id="13626DC0-6975-212B-13CD-67871670AA73">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>23BD94EE-3A02-CCF1-1663-7C38F7AF0FEE</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_entrada" id="BEF6BBE5-6FF2-0442-AE66-AB0B371BE4FA">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>C6BF6881-7C11-9FFC-84FE-2BE81FDE15EA</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_salida" id="2460BE43-719E-89E8-095E-A13CE6D9B9BB">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>E1981E51-6B8C-DA3F-7A62-8210CBD0F78B</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cant_personas" id="BFD79664-2988-AE1F-E569-DC385E015A23">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>DF4537A3-F1F5-1222-790D-6ABCCDE9BB83</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Habis_id_habitacion" id="96393FE4-3ECB-A9AC-81F4-0EB824336022">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>99BE2B9B-746A-0548-35E0-06DDD314149D</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="52E6337F-2A8F-7AB7-F16F-C1A2959E6AF0" referredColumn="C106712F-E94B-D1B4-6CEA-AF12BD97C095"/>
+</associations>
+</Column>
+<Column name="Cuentas_idCuenta" id="0181CE60-E0A2-D725-60A8-F69E03557CA1">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>AB7D7DB3-3A76-D4A4-9150-19C35A883740</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C2D2D5B5-B6A1-8903-2A20-F34B7981F498" referredColumn="4D7D4B3A-7192-89FF-4815-27A6124FDF52"/>
+</associations>
+</Column>
+<Column name="Planes_idTipoPlan" id="17595A7A-7CAC-440C-D988-0D1CD9D41F13">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>5162731A-9C64-7B11-A2FB-853069592725</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CF184074-A10E-A9E8-F19D-80866B3DCEC7" referredColumn="3984F49F-70FE-D293-73B5-77DF8CABDD85"/>
+</associations>
+</Column>
+<Column name="Hoteles_nombre" id="C2A1E113-4BB5-EBCF-571B-41E46FF6891C">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>340C352A-3410-3D50-1F9D-8C1730C0D97B</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6CD494C9-1389-7781-9E92-F55FCA37C8F3" referredColumn="D5D33334-A4EA-9544-1276-6F48E354A168"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7D4B8C3E-6FD2-2B40-A23B-3A54D629FE36" name="Reservas_PK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>B97EE383-1C1A-737E-A224-7EE8A5971633</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13626DC0-6975-212B-13CD-67871670AA73"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A293154-55A0-CEA4-C72C-BAB2C3EB66D2" name="Reservas__IDX">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B78FB622-73C3-DB88-6857-B0B1BB309DB3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0181CE60-E0A2-D725-60A8-F69E03557CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49318985-74F1-63B3-9CF4-97F88648412E" name="Reservas_Cuentas_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>B78FB622-73C3-DB88-6857-B0B1BB309DB3</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0181CE60-E0A2-D725-60A8-F69E03557CA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8FC16B4B-CF29-6616-989D-D5DBD64E0DED" name="Reservas_Habis_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>5B80455F-5825-6AFB-E455-50848D80D2CB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96393FE4-3ECB-A9AC-81F4-0EB824336022"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B194E3C6-12C6-2430-C5EA-4533B80CD44F" name="Reservas_Hoteles_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>500031B2-7387-167F-D6F8-B302A274DCA7</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2A1E113-4BB5-EBCF-571B-41E46FF6891C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E3BA24D-78BC-8576-D2E8-948BEE2942CA" name="Reservas_Planes_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>940BAD17-CEDC-C64F-58B5-806F7BA6A54B</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="17595A7A-7CAC-440C-D988-0D1CD9D41F13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

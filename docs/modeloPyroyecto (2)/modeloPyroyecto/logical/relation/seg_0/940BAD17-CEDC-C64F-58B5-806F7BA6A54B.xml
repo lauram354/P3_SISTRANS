@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="reservPlan" directorySegmentName="seg_0" id="940BAD17-CEDC-C64F-58B5-806F7BA6A54B">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:34:47 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>280421FE-A9D0-965E-CF1F-E133A456A10A</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EEA1BC27-542B-BEA5-3653-FF5F881AC3B6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9CEE2962-3F24-573F-608A-23A2105F2ED1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

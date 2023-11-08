@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="825BE07F-632F-81B5-C382-D86D1B1FA11C" containerWithKeyObject="77447BE9-9FD3-9B6C-E623-6CA01C0D53D6" localFKIndex="1A18E940-2838-3180-FA87-E322DF8AB2D1" name="reservaServ_consumos_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:17 UTC</createdTime>
+<generatorID>C402DD19-C6EE-3AD1-1FD7-B1DCF9A1FC34</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>consumos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F4A286E0-B252-1D8B-DCE1-A3DC9A472B01</referredTableID>
+<keyObject>B6D35F93-830E-68A9-FC59-AB85F44BC746</keyObject>
+<referredKeyID>B6D35F93-830E-68A9-FC59-AB85F44BC746</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idConsumo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

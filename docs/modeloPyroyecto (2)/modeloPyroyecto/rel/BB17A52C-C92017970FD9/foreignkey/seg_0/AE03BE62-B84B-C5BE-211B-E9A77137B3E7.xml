@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AE03BE62-B84B-C5BE-211B-E9A77137B3E7" containerWithKeyObject="CE3B4F61-0F24-17D7-D815-C24D33C02B5A" localFKIndex="CA486E39-2E9D-F879-FA7A-A610D6E8258C" name="Horarios_Gym_FK">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-30 11:09:16 UTC</createdTime>
+<generatorID>379AB61B-B232-475A-9BAF-B24ACF7B73EB</generatorID>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<referredTableLongName>Gym</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AAA8ECE0-A1E6-AD17-E2CE-A9B68426CD49</referredTableID>
+<keyObject>2A64A78C-BF90-ABF9-6DD6-F89BEAF3B100</keyObject>
+<referredKeyID>2A64A78C-BF90-ABF9-6DD6-F89BEAF3B100</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idServicio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

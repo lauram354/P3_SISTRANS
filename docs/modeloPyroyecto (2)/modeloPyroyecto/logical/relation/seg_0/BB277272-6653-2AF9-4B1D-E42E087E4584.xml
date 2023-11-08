@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="horaSalon" directorySegmentName="seg_0" id="BB277272-6653-2AF9-4B1D-E42E087E4584">
+<createdBy>laura</createdBy>
+<createdTime>2023-10-24 00:37:47 UTC</createdTime>
+<ownerDesignName>modeloPyroyecto</ownerDesignName>
+<engineerTo>
+<item key="BB17A52C-3ED8-7983-54C9-C92017970FD9" value="true"/>
+<item key="0C25AC57-6380-5003-EB66-36A85E315BE9" value="true"/>
+</engineerTo>
+<sourcePk>3AD21BDB-8135-1048-F02C-3BCB0E7FEC18</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>977749E9-6E9A-7DFD-50F2-AB0573055308</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6F36F86E-07DC-64EE-E138-E27AD8D311F4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
