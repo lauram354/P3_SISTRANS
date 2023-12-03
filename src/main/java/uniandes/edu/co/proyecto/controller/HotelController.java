@@ -42,5 +42,22 @@ public class HotelController {
         return "tiposHabi";
     }
 
+     @GetMapping("/habis")
+    public String obtenerTodasLasHabitaciones(Model model){
+        model.addAttribute("hotel", hotelRepository.findAll());
+        return "habis";
+    }
+
+     @GetMapping("/servicios")
+    public String obtenerTodasLosServicios(Model model){
+        model.addAttribute("hotel", hotelRepository.findAll());
+        return "servicios";
+    }
+
+     @GetMapping("/consumos")
+    public String obtenerTodasLosConsumos(Model model){
+        model.addAttribute("hotel", hotelRepository.findAll());
+        return "consumos";
+    }
     
 }
