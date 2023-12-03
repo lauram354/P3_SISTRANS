@@ -8,9 +8,11 @@ public class ClientesEmbedded {
     private String email;
 
     public ClientesEmbedded() {
+        super();
     }
 
     public ClientesEmbedded(Integer _id, String tipoid, String nombre, String email) {
+        super();
         this._id = _id;
         this.tipoid = tipoid;
         this.nombre = nombre;

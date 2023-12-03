@@ -6,9 +6,11 @@ public class tipoHabiEmbedded {
     private Integer capacidad;
     
     public tipoHabiEmbedded() {
+        super();
     }
 
     public tipoHabiEmbedded(String nombre, Integer costo, Integer capacidad) {
+        super();
         this.nombre = nombre;
         this.costo = costo;
         this.capacidad = capacidad;

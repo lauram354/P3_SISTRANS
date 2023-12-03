@@ -6,9 +6,11 @@ public class ServicioEmbedded {
     private Integer costo;
     
     public ServicioEmbedded() {
+        super();
     }
 
     public ServicioEmbedded(String nombre, String descripcion, Integer costo) {
+        super();
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.costo = costo;

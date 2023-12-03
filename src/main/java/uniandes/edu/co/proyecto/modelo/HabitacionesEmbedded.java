@@ -10,10 +10,12 @@ public class HabitacionesEmbedded {
 
 
     public HabitacionesEmbedded() {
+        super();
     }
 
     
     public HabitacionesEmbedded(Integer numero, List<String> dotacion, List<tipoHabiEmbedded> tipohabi) {
+        super();
         this.numero = numero;
         this.dotacion = dotacion;
         this.tipohabi = tipohabi;

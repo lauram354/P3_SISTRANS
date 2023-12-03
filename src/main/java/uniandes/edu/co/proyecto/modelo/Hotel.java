@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.Field;
+
 
 @Document(collection = "hotel")
 public class Hotel{
@@ -28,6 +28,7 @@ public class Hotel{
 
     public Hotel(){
         //Constructor vacio para el uso de Spring
+        super();
     }
 
 
@@ -35,15 +36,16 @@ public class Hotel{
 
     public Hotel(String id, Date inicio, Date fin, Integer diasreserva, Boolean checkin, Boolean checkout,
             List<HabitacionesEmbedded> habitaciones, List<ClientesEmbedded> clientes, List<ConsumosEmbedded> consumos) {
+        super();
         this.id = id;
         this.inicio = inicio;
         this.fin = fin;
         this.diasreserva = diasreserva;
         this.checkin = checkin;
         this.checkout = checkout;
-        this.habitaciones = habitaciones;
-        this.clientes = clientes;
-        this.consumos = consumos;
+        habitaciones = habitaciones;
+        clientes = clientes;
+        consumos = consumos;
     }
 
 

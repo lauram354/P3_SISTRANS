@@ -10,9 +10,11 @@ public class ConsumosEmbedded {
     private List<ServicioEmbedded> servicio;
     
     public ConsumosEmbedded() {
+        super();
     }
 
     public ConsumosEmbedded(Date fecha, Boolean pagado, List<ServicioEmbedded> servicio) {
+        super();
         this.fecha = fecha;
         this.pagado = pagado;
         this.servicio = servicio;
