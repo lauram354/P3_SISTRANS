@@ -1,7 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="6C94FC0E-7CBF-B6D9-24BA-6E29E02A11E4">
-<createdBy>laura</createdBy>
-<createdTime>2023-10-23 23:20:10 UTC</createdTime>
-<ownerDesignName>modeloPyroyecto</ownerDesignName>
-<shouldBeOpen>false</shouldBeOpen>
-</BusinessInfoDesign>
