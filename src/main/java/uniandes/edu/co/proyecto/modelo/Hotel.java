@@ -21,16 +21,17 @@ public class Hotel{
     private Boolean checkout;
 
     // Lista de habitaciones embebidas en el documento principal
-    private List<HabitacionesEmbedded> Habitaciones;
-    private List<ClientesEmbedded> Clientes;
-    private List<ConsumosEmbedded> Consumos;
+    private List<HabitacionesEmbedded> habitaciones;
+    private List<ClientesEmbedded> clientes;
+    private List<ConsumosEmbedded> consumos;
 
 
     public Hotel(){
         //Constructor vacio para el uso de Spring
     }
 
-    
+
+
 
     public Hotel(String id, Date inicio, Date fin, Integer diasreserva, Boolean checkin, Boolean checkout,
             List<HabitacionesEmbedded> habitaciones, List<ClientesEmbedded> clientes, List<ConsumosEmbedded> consumos) {
@@ -40,10 +41,11 @@ public class Hotel{
         this.diasreserva = diasreserva;
         this.checkin = checkin;
         this.checkout = checkout;
-        Habitaciones = habitaciones;
-        Clientes = clientes;
-        Consumos = consumos;
+        this.habitaciones = habitaciones;
+        this.clientes = clientes;
+        this.consumos = consumos;
     }
+
 
 
 
@@ -107,34 +109,59 @@ public class Hotel{
     }
 
 
+
+
     public List<HabitacionesEmbedded> getHabitaciones() {
-        return Habitaciones;
+        return habitaciones;
     }
+
+
 
 
     public void setHabitaciones(List<HabitacionesEmbedded> habitaciones) {
-        Habitaciones = habitaciones;
+        this.habitaciones = habitaciones;
     }
+
+
 
 
     public List<ClientesEmbedded> getClientes() {
-        return Clientes;
+        return clientes;
     }
+
+
 
 
     public void setClientes(List<ClientesEmbedded> clientes) {
-        Clientes = clientes;
+        this.clientes = clientes;
     }
+
+
 
 
     public List<ConsumosEmbedded> getConsumos() {
-        return Consumos;
+        return consumos;
     }
+
+
 
 
     public void setConsumos(List<ConsumosEmbedded> consumos) {
-        Consumos = consumos;
+        this.consumos = consumos;
     }
+
+    public void addCliente(ClientesEmbedded cliente){
+        this.clientes.add(cliente);
+    }
+
+    public void addHabitacion(HabitacionesEmbedded habi){
+        this.habitaciones.add(habi);
+    }
+
+    public void addConsumo(ConsumosEmbedded consum){
+        this.consumos.add(consum);
+    }
+
 
     
 
