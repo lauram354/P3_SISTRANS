@@ -4,7 +4,7 @@ import java.util.List;
 
 public class HabitacionesEmbedded {
 
-    private Integer _id;
+    private Integer numero;
     private List<String> dotacion;
     private List<tipoHabiEmbedded> tipohabi;
 
@@ -13,15 +13,15 @@ public class HabitacionesEmbedded {
     }
 
     
-    public HabitacionesEmbedded(Integer _id, List<String> dotacion, List<tipoHabiEmbedded> tipohabi) {
-        this._id = _id;
+    public HabitacionesEmbedded(Integer numero, List<String> dotacion, List<tipoHabiEmbedded> tipohabi) {
+        this.numero = numero;
         this.dotacion = dotacion;
         this.tipohabi = tipohabi;
     }
 
 
-    public Integer get_id() {
-        return _id;
+    public Integer getnumero() {
+        return numero;
     }
     public List<String> getDotacion() {
         return dotacion;
@@ -30,8 +30,8 @@ public class HabitacionesEmbedded {
         return tipohabi;
     }
     
-    public void set_id(Integer _id) {
-        this._id = _id;
+    public void setnumero(Integer numero) {
+        this.numero = numero;
     }
     public void setDotacion(List<String> dotacion) {
         this.dotacion = dotacion;
