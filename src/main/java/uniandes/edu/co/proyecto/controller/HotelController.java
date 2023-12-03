@@ -27,7 +27,8 @@ public class HotelController {
 
     @GetMapping("/reservas")
     public String obtenerTodasLasReservas(Model model){
-        model.addAttribute("hotel", hotelRepository.findAll());
+        //model.addAttribute("hotel", new Hotel());
+        model.addAttribute("hotel", hotelRepository.findAllHoteles());
         return "reservas";
     }
 

@@ -7,13 +7,13 @@ public class ConsumosEmbedded {
     
     private Date fecha;
     private Boolean pagado;
-    private List<ServicioEmbedded> servicio;
+    private ServicioEmbedded servicio;
     
     public ConsumosEmbedded() {
         super();
     }
 
-    public ConsumosEmbedded(Date fecha, Boolean pagado, List<ServicioEmbedded> servicio) {
+    public ConsumosEmbedded(Date fecha, Boolean pagado, ServicioEmbedded servicio) {
         super();
         this.fecha = fecha;
         this.pagado = pagado;
@@ -36,11 +36,11 @@ public class ConsumosEmbedded {
         this.pagado = pagado;
     }
 
-    public List<ServicioEmbedded> getServicio() {
+    public ServicioEmbedded getServicio() {
         return servicio;
     }
 
-    public void setServicio(List<ServicioEmbedded> servicio) {
+    public void setServicio(ServicioEmbedded servicio) {
         this.servicio = servicio;
     }
 

@@ -4,6 +4,7 @@ package uniandes.edu.co.proyecto.modelo;
 import java.util.Date;
 import java.util.List;
 
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "hotel")
 public class Hotel{
    @Id
-    private String id;
+    private ObjectId id;
 
     
     private Date inicio;
@@ -34,31 +35,19 @@ public class Hotel{
 
 
 
-    public Hotel(String id, Date inicio, Date fin, Integer diasreserva, Boolean checkin, Boolean checkout,
+    public Hotel(Date inicio, Date fin, Integer diasreserva, Boolean checkin, Boolean checkout,
             List<HabitacionesEmbedded> habitaciones, List<ClientesEmbedded> clientes, List<ConsumosEmbedded> consumos) {
         super();
-        this.id = id;
         this.inicio = inicio;
         this.fin = fin;
         this.diasreserva = diasreserva;
         this.checkin = checkin;
         this.checkout = checkout;
-        habitaciones = habitaciones;
-        clientes = clientes;
-        consumos = consumos;
+        this.habitaciones = habitaciones;
+        this.clientes = clientes;
+        this.consumos = consumos;
     }
 
-
-
-
-    public String getId() {
-        return id;
-    }
-
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
 
     public Date getInicio() {

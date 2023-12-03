@@ -6,7 +6,7 @@ public class HabitacionesEmbedded {
 
     private Integer numero;
     private List<String> dotacion;
-    private List<tipoHabiEmbedded> tipohabi;
+    private tipoHabiEmbedded tipohabi;
 
 
     public HabitacionesEmbedded() {
@@ -14,7 +14,7 @@ public class HabitacionesEmbedded {
     }
 
     
-    public HabitacionesEmbedded(Integer numero, List<String> dotacion, List<tipoHabiEmbedded> tipohabi) {
+    public HabitacionesEmbedded(Integer numero, List<String> dotacion, tipoHabiEmbedded tipohabi) {
         super();
         this.numero = numero;
         this.dotacion = dotacion;
@@ -28,7 +28,7 @@ public class HabitacionesEmbedded {
     public List<String> getDotacion() {
         return dotacion;
     }
-    public List<tipoHabiEmbedded> getTipohabi() {
+    public tipoHabiEmbedded getTipohabi() {
         return tipohabi;
     }
     
@@ -38,7 +38,7 @@ public class HabitacionesEmbedded {
     public void setDotacion(List<String> dotacion) {
         this.dotacion = dotacion;
     }
-    public void setTipohabi(List<tipoHabiEmbedded> tipohabi) {
+    public void setTipohabi(tipoHabiEmbedded tipohabi) {
         this.tipohabi = tipohabi;
     }
 
